@@ -117,3 +117,21 @@ header h1 {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+.cart-area {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 1rem;
+}
+
+.cart-items {
+    display: flex;
+    justify-content: center;
+}
+
+.cart-message {
+    text-align: center;
+    color: var(--rose-500);
+    font-weight: 500;
+}
