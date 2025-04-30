@@ -41,9 +41,10 @@ header h1 {
 }
 
 .recipe-card {
+    position: relative;
     max-width: 500px;
     border-radius: 0.5rem;
-    background-color: var(--rose-100);
+    /* background-color: var(--rose-100); */
 }
 
 .card-img {
@@ -53,6 +54,16 @@ header h1 {
 .card-img img {
     border-radius: 0.5rem;
     width: 100%;
+}
+
+.add-to-cart {
+    position: absolute;
+    /* top: 73%; */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .add-to-cart-btn {
@@ -71,4 +82,20 @@ header h1 {
         /* background-color: var(--rose-300); */
         /* color: var(--rose-50); */
     }
+}
+
+.dessert-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    margin-top: 3rem;
+}
+
+.dessert-name {
+    color: var(--rose-300);
+}
+
+.price-tag {
+    color: var(--red);
+    font-weight: 500;
 }
