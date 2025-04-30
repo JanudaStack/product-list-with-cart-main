@@ -27,11 +27,12 @@ main {
     display: flex;
     flex-direction: column;
     padding: 1.3rem;
+    gap: 2rem;
 }
 
 header h1 {
     font-size: 2rem;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
 }
 
 .card-area {
