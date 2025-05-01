@@ -28,7 +28,7 @@ body {
 }
 
 main {
-    padding: 2rem;
+    padding: 1.5rem;
 }
 
 header h1 {
@@ -91,13 +91,19 @@ header h1 {
     border-radius: 1.5rem;
     border: 1px solid var(--red);
     background-color: var(--rose-50);
-    transition: 0.3s;
+    transition: all 0.3s;
+}
 
-    &:hover {
-        cursor: pointer;
-        /* background-color: var(--rose-300); */
-        /* color: var(--rose-50); */
-    }
+.add-to-cart-btn:hover {
+    cursor: pointer;
+    scale: 1.07;
+    /* background-color: var(--rose-300); */
+    /* color: var(--rose-50); */
+}
+
+.add-to-cart-btn:hover ~ .card-img img {
+    border: 2px solid var(--red); /* Add a border around the image */
+    border-radius: 0.5rem; /* Match the existing border-radius */
 }
 
 .dessert-content {
@@ -136,13 +142,17 @@ header h1 {
         grid-template-columns: 3fr 1fr;
         grid-template-areas: 'card-area cart-area';
     }
+
+    main {
+        padding: 3rem;
+    }
 }
 
 .cart-area {
     border-radius: 0.5rem;
     padding: 1rem;
     background-color: hsl(0, 0%, 100%);
-    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.068); */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.055);
     grid-area: cart-area;
     display: flex;
     flex-direction: column;
