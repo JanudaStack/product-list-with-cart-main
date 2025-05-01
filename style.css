@@ -97,13 +97,11 @@ header h1 {
 .add-to-cart-btn:hover {
     cursor: pointer;
     scale: 1.07;
-    /* background-color: var(--rose-300); */
-    /* color: var(--rose-50); */
 }
 
-.add-to-cart-btn:hover ~ .card-img img {
-    border: 2px solid var(--red); /* Add a border around the image */
-    border-radius: 0.5rem; /* Match the existing border-radius */
+.add-to-cart-btn:hover ~ .card-img {
+    border: 2px solid var(--red); /* Add a red border around the image */
+    border-radius: 0.5rem; /* Match the existing border-radius of the image */
 }
 
 .dessert-content {
@@ -178,7 +176,7 @@ header h1 {
 }
 
 .attribution {
-    margin-top: 3vh;
+    margin: 2vh 0;
     text-align: center;
 }
 
