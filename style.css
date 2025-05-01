@@ -28,6 +28,15 @@ body {
 }
 
 main {
+    padding: 2rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.grid-container {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -36,13 +45,7 @@ main {
     /* align-items: center; */
     justify-content: center;
     flex-direction: column;
-    padding: 1.3rem;
     gap: 2rem;
-}
-
-header h1 {
-    font-size: 2rem;
-    /* margin-bottom: 2rem; */
 }
 
 .card-area {
@@ -129,8 +132,7 @@ header h1 {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    main {
-        padding: 4rem;
+    .grid-container {
         grid-template-columns: 3fr 1fr;
         grid-template-areas: 'card-area cart-area';
     }
