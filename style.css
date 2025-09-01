@@ -198,15 +198,13 @@ button {
     .remove-item-btn {
         margin-left: auto;
 
-        img {
-            background-image: url('assets/images/icon-remove-item.svg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            width: 20px;
-            height: 20px;
-            border: 2px solid var(--red);
-            border-radius: 50%;
-        }
+        background-image: url('./assets/images/icon-remove-item.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+        border: 2px solid var(--red);
+        border-radius: 50%;
 
         &:hover {
             cursor: pointer;
