@@ -32,12 +32,16 @@ addToCartBtn.forEach((btn) => {
         item.appendChild(priceContainer);
         cartItem.appendChild(item);
 
-        const removeItem = document.querySelector('.remove-item-btn');
-
-        removeItem.addEventListener('click', () => {
-            item.remove();
-        });
-
         console.log('button works', e.target.dessertTitle);
+    });
+});
+
+const removeItem = document.querySelectorAll('.remove-item-btn');
+
+removeItem.forEach((removeBtn) => {
+    removeBtn.addEventListener('click', (e) => {
+        const deleteItem = e.target.closest('.item');
+        deleteItem.style.display = 'none';
+        console.log('hello');
     });
 });
