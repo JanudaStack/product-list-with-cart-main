@@ -14,9 +14,9 @@ addToCartBtn.forEach((btn) => {
         <h3 class="cart-item-title">${itemTitle}</h3>
          <div class="price-container">
             <span class="item-quantity">1</span>
-             <span class="item-price">${itemPrice}</span>
-             <span class="quantity-price"></span>
-             <button class="remove-item-btn"></button>
+            <span class="item-price">${itemPrice}</span>
+            <span class="quantity-price"></span>
+            <button class="remove-item-btn"></button>
          </div>`;
 
         cartItems.appendChild(item);
