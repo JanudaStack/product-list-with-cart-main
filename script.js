@@ -12,12 +12,12 @@ addToCartBtn.forEach((btn) => {
 
         item.innerHTML = `
         <h3 class="cart-item-title">${itemTitle}</h3>
-         <div class="price-container">
-            <span class="item-quantity">1</span>
-            <span class="item-price">${itemPrice}</span>
+        <div class="price-container">
+            <span class="item-quantity">1x</span>
+            <span class="item-price">@${itemPrice}</span>
             <span class="quantity-price"></span>
             <button class="remove-item-btn"></button>
-         </div>`;
+        </div>`;
 
         cartItems.appendChild(item);
     });
