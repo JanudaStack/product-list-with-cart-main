@@ -10,6 +10,13 @@ addToCartBtn.forEach((btn) => {
         const item = document.createElement('div');
         item.classList.add('item');
 
+        const cartImg = document.querySelector('.empty-cart-img');
+        const cartMsg = document.querySelector('.cart-message');
+        if ((cartImg, cartMsg)) {
+            cartImg.style.display = 'none';
+            cartMsg.style.display = 'none';
+        }
+
         item.innerHTML = `
         <h3 class="cart-item-title">${itemTitle}</h3>
         <div class="price-container">
